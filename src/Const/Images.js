@@ -1,3 +1,6 @@
-const images={
-    logo:required('../../assets/favicon.jpg')
+import { Image } from "react-native"
+
+const Images={
+    logo:require('../../assets/chatchat.jpg')
 }
+export default Images

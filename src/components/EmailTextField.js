@@ -6,12 +6,12 @@ import Constants from '../Const/Constant'
 const EmailTextField=({term,placeHolder,onTermChange,onValidateEmailAddress,error})=>{
     return(
         <View>
-            <Text style={styles.error}>{error}</Text>
+            <Text style={styles.ErrorText}>{error}</Text>
             <View style={styles.TextFieldView}>
             <TextInput
                 autoCorrect={false}
                 style={styles.TextField}
-                placeHolder={placeHolder}
+                placeholder={placeHolder}
                 value={term}
                 onChangeText={onTermChange}
                 onEndEditing={onValidateEmailAddress}
